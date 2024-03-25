@@ -2,7 +2,7 @@
   <ul>
     {% for nav in collections.secondary %}
     <li {% if page.url==nav.url %}aria-current="page" {% endif %}>
-      <a href="{{ nav.url }}">{{ nav.data.title }}</a>
+      <a href="{{ nav.url | url }}">{{ nav.data.title }}</a>
     </li>
     {% endfor %}
   </ul>

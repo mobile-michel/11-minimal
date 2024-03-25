@@ -2,14 +2,14 @@
   "name": "11-minimal",
   "version": "1.0.0",
   "description": "Minimal Eleventy template with no configuration.",
-  "main": "index.js",
+  "main": "eleventy.config.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build": "eleventy",
+    "build": "eleventy --pathprefix '11-minimal'",
     "debug": "DEBUG=* eleventy"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["eleventy", "liquid", "template", "minimal"],
+  "author": "Michel Maillard",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
