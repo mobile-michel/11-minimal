@@ -1,0 +1,17 @@
+{
+  "name": "11-minimal",
+  "version": "1.0.0",
+  "description": "Minimal Eleventy template with no configuration.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "eleventy",
+    "debug": "DEBUG=* eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
