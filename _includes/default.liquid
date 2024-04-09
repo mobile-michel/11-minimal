@@ -1,23 +1,25 @@
 ---
 layout: base
 ---
-<header role="banner">
+<header>
     {% include 'navPrimary' %}
     <h1>Welcome</h1>
 </header>
 <main>
-    {% if aside %}
-    <aside role="complementary">
+    {% if collections.secondary %}
+    <aside>
         {% include 'navSecondary' %}
     </aside>
     {% endif %}
-    <section aria-labelledby="{{ title }}">
-        <h2 id="{{ title }}">{{ title }}</h2>
-        {% if description %}<p>{{ description }}</p>{% endif %}
+    <section aria-labelledby="{{ title | remove: ' ' }}">
+        <h2 id="{{ title | remove: ' ' }}">{{ title }}</h2>
+        {% if description %}<p><strong>{{ description }}</strong></p>{% endif %}
         {{ content }}
     </section>
 </main>
-<footer role="contentinfo">
+<footer>
+    {% if collections.footer %}
     {% include 'navFooter' %}
+    {% endif %}
     {% include 'copyright' %}
 </footer>
