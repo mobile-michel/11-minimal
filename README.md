@@ -20,10 +20,8 @@
 
 ## eleventy.config.js
 
-- `module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget("./css/");
-  eleventyConfig.addPassthroughCopy("./css");
-};`
+- `eleventyConfig.addWatchTarget("./css/");`  
+  `eleventyConfig.addPassthroughCopy("./css");`
 
 ## GitHub Pages
 
