@@ -11,8 +11,8 @@
 
 ## Structure
 - layouts: base + default with includes
-- includes: copyright + navFooter + navPrimary + navSecondary
-- HTML5 landmarks: `header, main & footer` + `aside & section`
+- includes: copyright + nav-footer + nav-primary + nav-secondary
+- HTML5 landmarks: `header, main & footer` + `aside & section` (with `if` condition)
 - navigation links with `tags: primary, secondary & footer`
 - not responsive layout
 
