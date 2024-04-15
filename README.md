@@ -34,3 +34,4 @@ eleventyConfig.addPassthroughCopy("./css");
 
 ## Special
 - Github Pages
+- dark mode with @media (prefers-color-scheme: dark)
