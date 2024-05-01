@@ -5,7 +5,8 @@
   "main": "eleventy.config.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build": "eleventy --pathprefix '11-minimal'",
+    "build": "eleventy",
+    "build-gp": "eleventy --pathprefix '11-minimal'",
     "debug": "DEBUG=* eleventy"
   },
   "keywords": ["eleventy", "liquid", "template", "minimal"],
